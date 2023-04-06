@@ -1,0 +1,70 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main.table {
+    width: 82vw;
+    height: 90vh;
+    background-color: #ebd1dd;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+    margin: .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+    overflow: overlay;
+}
+
+table {
+    width: 100%;
+    align-items: center;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #a39e9e;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #b821210b;
+}
+.hidden-scrollbar {
+    color:rgb(0, 0, 0);  
+    overflow:hidden;
+    text-align:justify;    
+  }
+  
+  .hidden-scrollbar .inner {
+    height: 630px;
+    overflow:auto;
+    margin:15px -300px 15px 15px;
+    padding-right:300px; /* Samakan dengan besar margin negatif */
+  }
